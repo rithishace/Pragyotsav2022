@@ -1,0 +1,152 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Registration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	
+	<link rel="stylesheet" href="{{ url_for('static',    filename='css/reg.css') }}">
+  
+<style>
+    #canvas, #text {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+.form-group .form-control {
+  border: none;
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-group .form-control:active,.form-group .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid white;
+}
+.form-control {
+  border: none;
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-control:active, .form-control:focus {
+  background: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 1px solid white;
+}
+
+.inp
+{
+    background: transparent;
+    border: none;
+    width: 100%;
+    color: #FFF;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+</style>
+	</head>
+	<body >
+		
+        <section class="ftco-section">
+            <div class="row no-gutters">
+                <div class="col-md-7">
+                    <div class="contact-wrap w-100 p-md-5 p-4" style="background-color:transparent;">
+                        <h3 style="font-family: 'Times New Roman', Times, serif; color: gold;" class="mb-4">Register Here!</h3>
+                         <form method="POST" id="contactForm" name="contactForm" action="/registerpage" class="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">                                       
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6"> 
+                                    <div class="form-group">                                        
+                                        <input type="email" class="form-control inp" name="email" id="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">                                       
+                                        <input type="text" class="form-control" name="college" id="name" placeholder="College">
+                                    </div>
+                                </div>
+                                <div class="col-md-6"> 
+                                    <div class="form-group">
+                                    <select style="background-color: #171717;" class="form-control" id="year" name="year">
+                                        <option value="" disabled selected >Year</option>
+   
+                                        <option value="1">First year</option>
+                                          <option value="2">Second year</option>
+                                          <option value="3">Third year</option>
+                                          <option value="4">Fouth year</option>
+                                        </select>
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">                                      
+                                        <input type="text" class="form-control" name="department" placeholder="Department">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="tel" id="phone" name="phone" maxlength="10" class="form-control" placeholder="Contact">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="transaction" placeholder="Transaction Code" >
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" value="Register" class="button-34 ">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex align-items-stretch" style="position: relative;">
+                    <div >
+                       <figure>
+                        <img src="{{url_for('static', filename='images/eventlogo.png')}}"  class="info-wrap w-100 p-5 img" style="object-fit: cover;" align="middle" />
+                        <figcaption>Upi id:  phone number:</figcaption>
+                          </figure>
+                        
+          </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/popper.js')}}"></script>
+  <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/jquery.validate.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/main.js')}}"></script>
+      
+	</body>
+</html>
+
