@@ -1,48 +1,100 @@
-<html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
-  </head>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Pragyotsav&mdash; A National Level Technical Festival</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/vendor/bootstrap.min.css') }}">
+   
     <style>
-      body {
-        text-align: center;
-        padding: 40px 0;
-        background: #EBF0F5;
-      }
+      
+        body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  color: #D4AF37;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+  background-color:#171717;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  z-index: 8;
+}.button-34 {
+  background: gold;
+  border-radius: 999px;
+  box-shadow: goldenrod 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #171717;
+  cursor: pointer;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
         h1 {
-          color: #88B04B;
-          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          color:gold;
+          font-family: 'Times New Roman', Times, serif;
           font-weight: 900;
           font-size: 40px;
           margin-bottom: 10px;
         }
         p {
-          color: #404F5E;
-          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          color:#D4AF37;;
+          font-family: 'Times New Roman', Times, serif;
           font-size:20px;
           margin: 0;
         }
       i {
-        color: #9ABC66;
+        color: goldenrod;
         font-size: 100px;
         line-height: 200px;
         margin-left:-15px;
       }
       .card {
-        background: white;
+        background:transparent;
         padding: 60px;
-        border-radius: 4px;
-        box-shadow: 0 2px 3px #C8D0D8;
         display: inline-block;
         margin: 0 auto;
       }
     </style>
+</head>
+   
     <body>
       <div class="card">
-      <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+      <div style="border-radius:200px; height:200px; width:200px; margin:0 auto;">
         <i class="checkmark">✓</i>
       </div>
-        <h1>Success</h1> 
-        <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
+        <h1>Registered ID: {{data[0]}}</h1> 
+        <p>Name:{{data[1]}} Payment Id: {{data[7]}} </p>
+        <p>Kindly take record the above details for future references!!</p>
+        <br>
+        <a href="{{ url_for('home') }}"class="button-34">Redirect-Home</a>
       </div>
     </body>
 </html>

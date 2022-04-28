@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template,redirect,url_for
 import os
 from datetime import datetime
 import pytz
@@ -12,9 +12,10 @@ credential = ServiceAccountCredentials.from_json_keyfile_name("credentials.json"
                                                               ["https://spreadsheets.google.com/feeds",                                                               "https://www.googleapis.com/auth/spreadsheets",                                                        "https://www.googleapis.com/auth/drive.file",                                                        "https://www.googleapis.com/auth/drive"])
 client = gspread.authorize(credential)
 gsheet = client.open("RegistrationDocument").sheet1
+gfeedback = client.open("Feedback").sheet1
 @app.route('/all_records', methods=["GET"])
 def all_records():
-    return jsonify(gsheet.get_all_records())
+    return jsonify(gfeedback.get_all_records())
 @app.route('/add_record')
 def add_record():    
     row = ['kumar',"date","score"]
@@ -37,8 +38,12 @@ def update_record():
 def home():
 
     if request.method == 'POST':
-        result = request.form
-        print(result) 
+        row=[]
+        row.append(request.form['name'])
+        row.append(request.form['email'])
+        row.append(request.form['message'])
+
+        gfeedback.insert_row(row, 2)
         return render_template("index.html")
     else:
         return render_template("index.html")
@@ -74,4 +79,4 @@ def registerpage():
     
     
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
