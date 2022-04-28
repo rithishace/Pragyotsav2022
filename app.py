@@ -68,7 +68,7 @@ def registerpage():
         print(row)
         gsheet.insert_row(row, 2)  # since the first row is our title header
     
-        return render_template("regresponse.html")
+        return render_template("regresponse.html",data=row)
     else:   
         return render_template("register.html")
     

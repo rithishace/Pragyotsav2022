@@ -1,84 +1,48 @@
-<!doctype html>
-<html lang="en">
+<html>
   <head>
-  	<title>Registration</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	
-	<link rel="stylesheet" href="{{ url_for('static',    filename='css/reg.css') }}">
-  
-<style>
-    #canvas, #text {
-	position: absolute;
-	display: block;
-	top: 0;
-	left: 0;
-	z-index: -1;
-}html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-
-}
-.form-group .form-control {
-  border: none;
-  background: none;
-  padding-left: 0;
-  padding-right: 0;
-  border-radius: 0;
-  color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.form-group .form-control:active,.form-group .form-control:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-bottom: 1px solid white;
-}
-.form-control {
-  border: none;
-  background: none;
-  padding-left: 0;
-  padding-right: 0;
-  border-radius: 0;
-  color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.form-control:active, .form-control:focus {
-  background: none;
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-bottom: 1px solid white;
-}
-
-.inp
-{
-    background: transparent;
-    border: none;
-    width: 100%;
-    color: #FFF;
-    background: transparent;
-    border: none;
-    outline: none;
-}
-</style>
-	</head>
-	<body >
-		
-        {%block content%}
-
-        {%endblock%}     
-        
-
-        <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
-  <script src="{{url_for('static', filename='js/popper.js')}}"></script>
-  <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
-  <script src="{{url_for('static', filename='js/jquery.validate.min.js')}}"></script>
-  <script src="{{url_for('static', filename='js/main.js')}}"></script>
-      
-	</body>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+  </head>
+    <style>
+      body {
+        text-align: center;
+        padding: 40px 0;
+        background: #EBF0F5;
+      }
+        h1 {
+          color: #88B04B;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-weight: 900;
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #404F5E;
+          font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+          font-size:20px;
+          margin: 0;
+        }
+      i {
+        color: #9ABC66;
+        font-size: 100px;
+        line-height: 200px;
+        margin-left:-15px;
+      }
+      .card {
+        background: white;
+        padding: 60px;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px #C8D0D8;
+        display: inline-block;
+        margin: 0 auto;
+      }
+    </style>
+    <body>
+      <div class="card">
+      <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+        <i class="checkmark">✓</i>
+      </div>
+        <h1>Success</h1> 
+        <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
+      </div>
+    </body>
 </html>
-
