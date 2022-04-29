@@ -825,14 +825,22 @@ a, a:hover {
   font-weight: 900;
   color: #fff;
 }
-
-
+#abcde{
+  max-width: 25%;
+  float: left;
+  height: auto;
+}
+#12345{
+  max-width: 13%;
+  float: right;
+  height: auto;
+}
 @media (max-width: 991.98px) {
   #abcde{
     max-width: 35%;
   }
   #12345{
-    max-width: 20 ;
+    max-width: 20%;
   }
   .cover-v1 .heading {
     font-size: 3rem;
