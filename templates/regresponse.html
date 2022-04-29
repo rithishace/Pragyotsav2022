@@ -3,6 +3,8 @@
 
 <head>
     <title>Pragyotsav&mdash; A National Level Technical Festival</title>
+    <link rel="icon" type="image/xl-icon" href="{{ url_for('static',    filename='images/prag.png') }}">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -90,8 +92,8 @@ body:before {
       <div style="border-radius:200px; height:200px; width:200px; margin:0 auto;">
         <i class="checkmark">✓</i>
       </div>
-        <h1>Registered ID: {{data[0]}}</h1> 
-        <p>Name:{{data[1]}} Payment Id: {{data[7]}} </p>
+        <h1>Registered ID: {{reg}}</h1> 
+        <p>Name:{{name}} Payment Id: {{trid}} </p>
         <p>Kindly take record the above details for future references!!</p>
         <br>
         <a href="{{ url_for('home') }}"class="button-34">Redirect-Home</a>

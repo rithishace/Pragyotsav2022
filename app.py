@@ -63,23 +63,23 @@ def register():
 @app.route("/registerpage",methods=['GET', 'POST'])
 def registerpage():
     if request.method == 'POST':
-        result = request.form
         row=[]
         row.append(''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(10)))
-        row.append(request.form['name'])
-        row.append(request.form['email'])
-        row.append(request.form['college'])
-        row.append(request.form['year'])
-        row.append(request.form['department'])
-        row.append(request.form['phone'])
-        row.append(request.form['transaction'])
+        
+        
         IST = pytz.timezone('Asia/Kolkata')
         datetime_ist = datetime.now(IST)
         row.append(datetime_ist.strftime('%Y:%m:%d %H:%M:%S'))
-        print(row)
+        
+        for list_type in request.form.items():
+            row.append(list_type[1])
+
+        
+        
+        
         gsheet.insert_row(row, 2)  # since the first row is our title header
     
-        return render_template("regresponse.html",data=row)
+        return render_template("regresponse.html",reg=row[0],name=request.form['TeamLead'],trid=request.form['Transaction'])
     else:   
         return render_template("register.html")
 
@@ -90,9 +90,9 @@ def admin():
         if(request.form['regid'] and request.form['regid'].strip()):
             res=[d for d in records if d['Id'] == request.form['regid'].strip()]
         elif(request.form['name'] and request.form['name'].strip()):
-            res=[d for d in records if d['Name'] ==request.form['name'].strip()]
+            res=[d for d in records if d['TName'] ==request.form['name'].strip()]
         elif(request.form['email'] and request.form['email'].strip()):
-            res=[d for d in records if d['Email'] == request.form['email'].strip()]
+            res=[d for d in records if d['TEmail'] == request.form['email'].strip()]
         elif(request.form['transaction'] and request.form['transaction'].strip()):
             res=[d for d in records if d['Transaction'] == request.form['transaction'].strip()]
         else:
@@ -103,4 +103,4 @@ def admin():
     else:
         return render_template("admin.html",data={})
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
