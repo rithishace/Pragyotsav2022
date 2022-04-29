@@ -2,7 +2,8 @@
              
 body {
   font-family: 'Times New Roman', Times, serif, sans-serif;
-  color: #D4AF37;
+ /* color: #D4AF37;*/
+ color: gold;
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
@@ -823,7 +824,8 @@ a, a:hover {
 .cover-v1 .heading {
   font-size: 5rem;
   font-weight: 900;
-  color: #fff;
+  font-family: 'Samarkan', sans-serif;
+  color: gold;
 }
 #abcde{
   max-width: 25%;
@@ -1881,6 +1883,10 @@ figure.dotted-bg:before {
 @media (max-width: 991.98px) {
   .unslate_co--footer .footer-site-social li {
     display: block;
+  }
+  #sspan{
+    font-size: larger;
+    ;
   }
 }
 
