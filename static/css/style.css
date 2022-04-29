@@ -850,13 +850,13 @@ a, a:hover {
 }
 
 .cover-v1 .subheading {
-  font-size: 33px;
-  color: #fff;
+  font-size: 24px;
+  color:goldenrod;
 }
 
 @media (max-width: 991.98px) {
   .cover-v1 .subheading {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
