@@ -53,8 +53,8 @@
         .column img {
             margin: 8px 8px 8px 8px;
             vertical-align: middle;
-            width: 80%;
-            height: 80%;
+            width: 60%;
+            height: 60%;
         }
 
         /* Responsive layout - makes a two column-layout instead of four columns */
@@ -68,8 +68,8 @@
             .column img {
                 margin: 8px 8px 8px 8px;
                 vertical-align: middle;
-                width: 60%;
-                height: 60%;
+                width: 50%;
+                height: 50%;
             }
         }
 
@@ -77,15 +77,15 @@
         @media screen and (max-width: 600px) {
             .column {
                 -ms-flex: 100%;
-                flex: 100%;
-                max-width: 100%;
+                flex: 50%;
+                max-width: 50%;
             }
 
             .column img {
                 margin: 8px 8px 8px 8px;
                 vertical-align: middle;
-                width: 40%;
-                height: 40%;
+                width: 50%;
+                height: 50%;
             }
         }
 
@@ -721,7 +721,7 @@
                                 <h1 class="heading "> <img src="{{url_for('static', filename='images/collegelogo.png')}}"
                                         alt="title logo" id="abcde" ></h1>
                                 <h1 class="heading "> <img src="{{url_for('static', filename='images/ietelogo.png')}}"
-                                        alt="title logo" id="12345" ></h1>
+                                        alt="title logo" id="fghjkl" ></h1>
 
                             </div>
 
@@ -774,7 +774,7 @@
                                 <div class="feature-v1 " data-aos="fade-up" data-aos-delay="200">
 
                                     <h3 style="color: gold;">The College</h3>
-                                    <p>Easwari Engineering College is an Autonomous institution (as per the 2019
+                                    <p style="color: goldenrod;">Easwari Engineering College is an Autonomous institution (as per the 2019
                                         regulation), that was instituted in the
                                         academic year 1996 -1997, with the approval of the Government of Tamil Nadu and
                                         AICTE, New Delhi. As per Govt.,
@@ -791,8 +791,8 @@
 
                             <div class="listing-ite">
                                 <div class="feature-v1 " data-aos="fade-up" data-aos-delay="200">
-                                    <h3>The IETE</h3>
-                                    <p>The Institution of Electronics and Telecommunication Engineers (IETE) is a
+                                    <h3 style="color: gold;">The IETE</h3>
+                                    <p style="color: goldenrod;">The Institution of Electronics and Telecommunication Engineers (IETE) is a
                                         platform to enrich profound knowledge in the
                                         field of science and technology. It is India’s leading and most recognized
                                         professional society which was established in
@@ -813,8 +813,8 @@
                             <div class="listing-ite">
                                 <div class="feature-v1 " data-aos="fade-up" data-aos-delay="200">
 
-                                    <h3>Pragyotsav2022</h3>
-                                    <p>Pragyotsav is a national-level technical event conducted by the IETE forum of our
+                                    <h3 style="color: gold;">Pragyotsav2022</h3>
+                                    <p style="color: goldenrod;">Pragyotsav is a national-level technical event conducted by the IETE forum of our
                                         college. This event is to provide
                                         extensive knowledge and exposure in the field of engineering and come out with
                                         innovative ideas on the technical
@@ -834,7 +834,7 @@
                 </div>
             </div>
 
-            <div class="unslate_co--section" id="events-section">
+            <div class="unslate_co--section" style="background: radial-gradient(#141414 ,BLACK);" id="events-section">
                 <div class="container">
 
                     <div class="section-heading-wrap text-center mb-5">
@@ -847,7 +847,7 @@
                             <a data-toggle="modal" data-target="#racing">
                                 <div class="feature-v1 " data-aos="fade-up" data-aos-delay="200">
                                     <div class="wrap-icon mb-3">
-                                        <img src="{{url_for('static', filename='images/IMG_0596.JPG')}}" alt="Icon"
+                                        <img src="{{url_for('static', filename='images/DSC_0409.JPG')}}" alt="Icon"
                                             width="100%">
                                     </div>
                                     <h3>RC Robo <br> Racing</h3>
@@ -952,7 +952,7 @@
                             <a data-toggle="modal" data-target="#soccer">
                                 <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
                                     <div class="wrap-icon mb-3">
-                                        <img src="{{url_for('static', filename='images/IMG_1294.JPG')}}" alt="Icon"
+                                        <img src="{{url_for('static', filename='images/DSC_0409.JPG')}}" alt="Icon"
                                             width="100%">
                                     </div>
                                     <h3>Robo <br> Soccer</h3>
@@ -983,7 +983,7 @@
                 </div>
             </div>
 
-            <div class="unslate_co--section" id="testimonial-section">
+            <div class="unslate_co--section" style="background: radial-gradient(#141414 ,BLACK);" id="testimonial-section">
                 <div class="container">
                     <div class="section-heading-wrap text-center mb-5">
                         <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Our Presenters</span>
@@ -1048,7 +1048,7 @@
             </div>
             <!-- END testimonial -->
 
-            <div class="unslate_co--section" id="journal-section">
+            <div class="unslate_co--section"style="background: radial-gradient(#141414 ,BLACK);" id="journal-section">
                 <div class="container">
                     <div class="section-heading-wrap text-center mb-5">
                         <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Glimpse of our
@@ -1153,11 +1153,10 @@
             <!-- END blog posts -->
 
 
-            <div class="unslate_co--section" id="contact-section">
+            <div class="unslate_co--section" style="background: radial-gradient(#141414 ,BLACK);" id="contact-section">
                 <div class="container">
                     <div class="section-heading-wrap text-center mb-5">
-                        <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Get In
-                                Touch</span>
+                        <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">For Queries </span>
                         </h2>
                         <div class="border"></div>
                     </div>
@@ -1191,11 +1190,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <div id="form-message-warning" class="mt-4"></div>
-                            <div id="form-message-success">
-                                Your message was sent, thank you!
-                            </div>
-
+                           
                         </div>
 
                         <div class="col-md-4">
@@ -1205,12 +1200,12 @@
                                     <a href="#" class="contact-info-val">eec.ieteforum@gmail.com</a>
                                 </div>
                                 <div class="gsap-reveal d-block">
-                                    <span class="d-block contact-info-label">Keshav</span>
-                                    <a href="#" class="contact-info-val">jgnjkgfnvkd</a>
+                                    <span class="d-block contact-info-label">Keshav G - President</span>
+                                    <a href="#" class="contact-info-val">9884809092</a>
                                 </div>
                                 <div class="gsap-reveal d-block">
-                                    <span class="d-block contact-info-label">vishwa T</span>
-                                    <a href="#" class="contact-info-val">9040345034</a>
+                                    <span class="d-block contact-info-label">Vishwa T - Treasurer</span>
+                                    <a href="#" class="contact-info-val">9600297742</a>
                                 </div>
                                 <div class="gsap-reveal d-block">
                                     <span class="d-block contact-info-label">Easwari Engineering

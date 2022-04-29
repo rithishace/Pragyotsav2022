@@ -830,7 +830,7 @@ a, a:hover {
   float: left;
   height: auto;
 }
-#12345{
+#fghjkl{
   max-width: 13%;
   float: right;
   height: auto;
@@ -839,7 +839,7 @@ a, a:hover {
   #abcde{
     max-width: 35%;
   }
-  #12345{
+  #fghjkl{
     max-width: 20%;
   }
   .cover-v1 .heading {
