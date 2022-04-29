@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="{{ url_for('static',    filename='css/vendor/aos.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',    filename='css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',    filename='css/vendor/jquery.fancybox.min.css') }}">
-    <link href="http://fonts.cdnfonts.com/css/samarkan" rel="stylesheet">
-
+   
     <style type="text/css">
         .border {
             border-top: 2px solid rgba(236, 239, 241, 0.07);
@@ -29,7 +28,11 @@
             position: relative;
             width: 30%;
         }
-
+        @font-face {
+        font-family: "Samarkan";
+        src: url("//db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.eot");
+        src: url("//db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.woff") format("woff"), url("//db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7e96eba370659b4e4563309dc4ebb33f.svg#Samarkan") format("svg");
+    }
         .row {
             display: -ms-flexbox;
             /* IE10 */
@@ -610,65 +613,66 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="3dpainting" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content" style="background-color:#171717;">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">3D-PAINTING</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="tab">
+        <div class="modal fade" id="painting" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color:#171717;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">ROBO SOCCER</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="tab">
 
-                            <ul class="tabs">
-                                <li><a href="#">Pandora's Box</a></li>
-                            </ul>
-                            <!-- / tabs -->
-                            <div class="tab_content">
-                                <div class="tabs_item">
-                                    <p class="subtitles">Do you have a knack for logical thinking
-                                        and circuit simplification?. You have come to
-                                        the right place. Oh! No but it all doesn’t matter
-                                        unless we get out of this stranded island . Try to
-                                        find the key to open the pandora’s box at this
-                                        centre of the island for the treasure. But for the
-                                        key , you’d have to solve the puzzles and clues
-                                        to get the treasure . Aye! Aye! Captain....BE
-                                        there.</p>
-                                    <p>
-                                    <h5>Registration :</h5>
-                                    1. College ID is mandatory.<br>
-                                    2. The event comes under general registration.(On spot)(On spot)<br><br>
-                                    <h5>Rules :</h5>
-                                    1. It’s a fun themed event which tests your
-                                    knowledge on circuit and wit to solve the
-                                    problems.<br>
-                                    2. Only teams of two are allowed to enter.<br>
-                                    3. Event consist of 2 rounds.<br>
-                                    4. One written and the final one is theme based
-                                    round<br>
-                                    5. Judge would explain the instruction on spot. <br>
-                                    6. Judges decision is final.<br>
-                                    7. Your speed and wit on circuit simplification would
-                                    be very useful.<br>
-                                    <br>
-                                    <h5>Co-Ordinator :</h5>
-                                    SIBI-9655856252</p>
-                                </div> <!-- / tabs_item -->
-                            </div>
+                        <ul class="tabs">
+                            <li><a href="#">Pandora's Box</a></li>
+                        </ul>
+                        <!-- / tabs -->
+                        <div class="tab_content">
+                            <div class="tabs_item">
+                                <p class="subtitles">Do you have a knack for logical thinking
+                                    and circuit simplification?. You have come to
+                                    the right place. Oh! No but it all doesn’t matter
+                                    unless we get out of this stranded island . Try to
+                                    find the key to open the pandora’s box at this
+                                    centre of the island for the treasure. But for the
+                                    key , you’d have to solve the puzzles and clues
+                                    to get the treasure . Aye! Aye! Captain....BE
+                                    there.</p>
+                                <p>
+                                <h5>Registration :</h5>
+                                1. College ID is mandatory.<br>
+                                2. The event comes under general registration.(On spot)(On spot)<br><br>
+                                <h5>Rules :</h5>
+                                1. It’s a fun themed event which tests your
+                                knowledge on circuit and wit to solve the
+                                problems.<br>
+                                2. Only teams of two are allowed to enter.<br>
+                                3. Event consist of 2 rounds.<br>
+                                4. One written and the final one is theme based
+                                round<br>
+                                5. Judge would explain the instruction on spot. <br>
+                                6. Judges decision is final.<br>
+                                7. Your speed and wit on circuit simplification would
+                                be very useful.<br>
+                                <br>
+                                <h5>Co-Ordinator :</h5>
+                                SIBI-9655856252</p>
+                            </div> <!-- / tabs_item -->
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        <a href="{{ url_for('register') }}" class="btn btn-primary">Register Now!</a>
-                    </div>
+                    <a href="{{ url_for('register') }}" class="btn btn-primary">Register Now!</a>
                 </div>
             </div>
         </div>
+    </div>
+        
     </div>
     <nav class="unslate_co--site-mobile-menu">
         <div class="close-wrap d-flex">
@@ -963,8 +967,22 @@
                                         or MESSI in you. </p>
                                 </div>
                         </div>
-
                         <div class="col-md-6 col-lg-4 mb-4 listing-item">
+                            <a data-toggle="modal" data-target="#painting">
+                                <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="wrap-icon mb-3">
+                                        <img src="{{url_for('static', filename='images/printing.jpg')}}" alt="Icon"
+                                            width="100%">
+                                    </div>
+                                    <h3>3D <br> Printing</h3>
+                                    <p>Printing is fine. Heard of 3D printing? Join this event to learn more and to
+                                        manure your knowledge about it and also to
+                                        be a part of a fun-filled problem (design) solving.</p>
+                                </div>
+                        </div>
+
+                 <!--
+                     <div class="col-md-6 col-lg-4 mb-4 listing-item">
                             <a data-toggle="modal" data-target="#3dpainting">
                                 <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
                                     <div class="wrap-icon mb-3">
@@ -976,13 +994,26 @@
                                         manure your knowledge about it and also to
                                         be a part of a fun-filled problem (design) solving.</p>
                                 </div>
-                            </a>
+                            
                         </div>
+                 -->       
 
                     </div>
                 </div>
             </div>
+            <div class="unslate_co--section" >
+                <div class="container">
 
+                    <div class="section-heading-wrap text-center mb-5">
+                        <h2 class="heading-h2 text-center"><span class="gsap-reveal">Register</span></h2>
+                        <div class="border">
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+            </div>
             <div class="unslate_co--section" style="background: radial-gradient(#141414 ,BLACK);" id="testimonial-section">
                 <div class="container">
                     <div class="section-heading-wrap text-center mb-5">
@@ -1228,11 +1259,12 @@
                 <div class="row justify-content-center">
                     <div class="col-md-12">
 
-                        <div class="footer-site-logo"><a href="#">Pragyotsav&mdash;<span
+                        <div class="footer-site-logo"><a href="#">Pragyotsav<span
                                     style="font-family:Georgia, 'Times New Roman', Times, serif">2022</span>
                         </div>
                         <div>
-                            <a href="#">Follow Us @ Instagram</a></label>
+                            <a href="https://www.instagram.com/pragyotsav_2022/">Follow Us @  <img class="fab" style="width: 23.8px; height: 23px;margin-top: -6.9px;"
+                                src="{{url_for('static', filename='images/instagram.png')}}"></a></label>
                         </div>
                         <center><iframe
                                 src="https://maps.google.com/maps?q=SRM%20Easwari%20Engineering%20College%20162%2C%20Bharathi%20Salai%2C%20Ramapuram%2C%20Ramapuram%2C%20Chennai%2C%20Tamil%20Nadu%20600089&amp;t=m&amp;z=12&amp;output=embed&amp;iwloc=near"
