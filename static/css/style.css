@@ -1,9 +1,8 @@
 
              
 body {
-  font-family: 'Times New Roman', Times, serif, sans-serif;
- /* color: #D4AF37;*/
- color: gold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;/* color: #D4AF37;*/
+ color:#fffec1;
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
@@ -50,7 +49,7 @@ body, .unslate_co--site-inner {
 }
 
 a {
-  color: #D4AF37;
+  color:#fffec1;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
@@ -58,7 +57,7 @@ a {
 
 a, a:hover {
   text-decoration: none !important;
-  color: #edba0f;
+  color:#fffec1;
 }
 
 .unslate_co--site-inner {
@@ -388,7 +387,7 @@ a, a:hover {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-family: 'icomoon';
+
 }
 
 
@@ -844,6 +843,9 @@ a, a:hover {
   #fghjkl{
     max-width: 20%;
   }
+  .qwert{
+    max-width: 15%;
+  }
   .cover-v1 .heading {
     font-size: 3rem;
   }
@@ -867,7 +869,7 @@ a, a:hover {
 
 .cover-v1 .subheading {
   font-size: 24px;
-  color:goldenrod;
+  
 }
 
 @media (max-width: 991.98px) {
@@ -1113,7 +1115,6 @@ a, a:hover {
 .portfolio-item .portfolio-item-content p, .blog-item .portfolio-item-content p {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
-  font-family: "Arimo", sans-serif;
 }
 
 .portfolio-item:hover .overlay, .blog-item:hover .overlay {
@@ -1441,7 +1442,8 @@ figure.dotted-bg:before {
 .counter-v1 .number-wrap .number {
   font-size: 69px;
   font-weight: 900;
-  font-family: "Arimo", sans-serif;
+ 
+  
   color: #D63447;
 }
 
@@ -1488,7 +1490,6 @@ figure.dotted-bg:before {
 .testimonial-v1 .testimonial-inner-bg .quote {
   display: block;
   font-size: 80px;
-  font-family: 'Georgia', serif;
 }
 
 .testimonial-v1 .testimonial-author-info {
@@ -1516,11 +1517,23 @@ figure.dotted-bg:before {
 .testimonial-slider .owl-stage, .single-slider .owl-stage {
   overflow: hidden;
 }
-
+.nline{
+font-size: medium;
+}
+.nameline{
+font-size: x-large;
+}
 @media (max-width: 991.98px) {
   .testimonial-slider .owl-nav, .single-slider .owl-nav {
     display: none;
   }
+  .nline{
+    font-size: small;
+    }
+    .nameline{
+    font-size: large;
+    
+    }
 }
 
 .testimonial-slider .owl-nav .owl-prev,
@@ -1639,9 +1652,7 @@ figure.dotted-bg:before {
   margin-bottom: 30px;
 }
 
-.blog-post-entry .post-meta {
-  font-family: "Arimo", sans-serif;
-}
+
 
 .form-outline-style-v1 .form-group {
   position: relative;
@@ -1885,7 +1896,7 @@ figure.dotted-bg:before {
     display: block;
   }
   #sspan{
-    font-size: large;
+    font-size:30px;
     ;
   }
 }

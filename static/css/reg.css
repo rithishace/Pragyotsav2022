@@ -8177,7 +8177,7 @@ h1, h2, h3, h4, h5,
 .button-34 {
   background: gold;
   border-radius: 999px;
-  box-shadow: goldenrod 0 10px 20px -10px;
+  box-shadow: #252525 0 10px 20px -10px;
   box-sizing: border-box;
   color: #171717;
   cursor: pointer;
