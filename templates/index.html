@@ -131,7 +131,12 @@
             justify-content: center;
         }
 
-       
+        .qwert {
+            float: right;
+            max-width: 9%;
+            padding-top: 5px;
+            padding-right: 20px;
+        }
 
         .hero::before {
             content: "";
@@ -765,7 +770,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-                        <a target="_blank" href="{{ url_for('register')}}"
+                        <a target="_blank" href="{{ url_for('register') }}"
                             class="btn btn-primary">Register Now!</a>
                     </div>
                 </div>
@@ -935,26 +940,26 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-9 mx-auto text-center">
-                            
-                            <div class="ro">
-                                <div class="colum">
-                                    <img src="{{url_for('static', filename='images/collegelogo.webp')}}"
-                                    style="background-color: white; padding: 2px 2px 2px 2px;" id="abcde"    alt="Pragyotsav2022" />
-                                </div>
-                                <div class="colum">
+                            <div>
+                                <br><br>
+                                <h1 class=""> <img src="{{url_for('static', filename='images/collegelogo.webp')}}"
+                                        alt="Pragyotsav2022" id="abcde"></h1>
+                                <h1 class=""> <img src="{{url_for('static', filename='images/ietelogo.webp')}}"
+                                        alt="title logo" id="fghjkl"></h1>
+                                <h1>
                                     <img class="qwert" src="{{url_for('static', filename='images/25logo.png')}}"
-                                    alt="rithish"  />
-                                </div>
-                                <div class="colum">
-                                    <img src="{{url_for('static', filename='images/ietelogo.webp')}}"
-                                    alt="title logo" id="fghjkl" />
-                                </div>
-                              </div>
-                            
+                                        alt="rithish">
+                                </h1>
+
+
+
+                            </div>
+
                             <h1 class="heading"><img src="{{url_for('static', filename='images/titlelogo.webp')}}"
                                     alt="Pragyotsav 2022" onerror="this.onerror=null;this.src='static/images/titlelogo.png';" style="max-width: 100%;   height: auto;"></h1>
 
-                            <h5 class="subheading"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A National Level Technical Festival.</h5>
+                            <h5 class="subheading"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A National Level Technical
+                                Festival.</h5>
                         </div>
 
                     </div>
