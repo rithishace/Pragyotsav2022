@@ -836,6 +836,7 @@ a, a:hover {
 #fghjkl{
   max-width: 13%;
   float: right;
+  margin-top: -10px;
   height: auto;
 }
 @media (max-width: 991.98px) {
@@ -847,7 +848,7 @@ a, a:hover {
   }
   .qwert{
     max-width: 15%;
-    margin-right: 80px;
+    margin-right: 70px;
   }
   .cover-v1 .heading {
     font-size: 3rem;
