@@ -828,6 +828,8 @@ a, a:hover {
 }
 #abcde{
   max-width: 25%;
+  background-color: white;
+  padding: 3px 3px 3px 3px;
   float: left;
   height: auto;
 }
@@ -845,6 +847,7 @@ a, a:hover {
   }
   .qwert{
     max-width: 15%;
+    margin-right: 80px;
   }
   .cover-v1 .heading {
     font-size: 3rem;
