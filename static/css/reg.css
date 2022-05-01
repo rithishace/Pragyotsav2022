@@ -31,9 +31,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-
+}
 *,
 *::before,
 *::after {
@@ -41,7 +39,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
+  
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
@@ -51,10 +49,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;font-family: 'Times New Roman', Times, serif, sans-serif;
-  color: #D4AF37;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;/* */
+ color:#fffec1;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  position: relative;
   text-align: left;
   background-color: #171717; }
 
@@ -152,7 +152,6 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em; }
 
 pre {
@@ -1621,16 +1620,16 @@ pre {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
   .form-control::-webkit-input-placeholder {
-    color: #D4AF37;
+    
     opacity: 1; }
   .form-control:-ms-input-placeholder {
-    color: #D4AF37;
+    
     opacity: 1; }
   .form-control::-ms-input-placeholder {
-    color: #D4AF37;
+    
     opacity: 1; }
   .form-control::placeholder {
-    color: #D4AF37;
+    
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
     background-color: #e9ecef;
@@ -4883,7 +4882,6 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4968,8 +4966,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-style: normal;
+   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
@@ -8148,7 +8145,6 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "Poppins", Arial, sans-serif;
   color: #000; }
 
 .bg-primary {
@@ -8177,11 +8173,10 @@ h1, h2, h3, h4, h5,
 .button-34 {
   background: gold;
   border-radius: 999px;
-  box-shadow: #252525 0 10px 20px -10px;
+  box-shadow: goldenrod 0 10px 20px -10px;
   box-sizing: border-box;
   color: #171717;
   cursor: pointer;
-  font-family:'Times New Roman', Times, serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -8206,16 +8201,16 @@ h1, h2, h3, h4, h5,
   border: 1px solid rgba(0, 0, 0, 0.1); }
   .form-control::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: #D4AF37 !important; }
+    color: #fffec1 !important; }
   .form-control::-moz-placeholder {
     /* Firefox 19+ */
-    color:#D4AF37 !important; }
+    color:#fffec1 !important; }
   .form-control:-ms-input-placeholder {
     /* IE 0+ */
-    color: #D4AF37 !important; }
+    color: #fffec1 !important; }
   .form-control:-moz-placeholder {
     /* Firefox 18- */
-    color: #D4AF37 !important; }
+    color: #fffec1 !important; }
   .form-control:focus, .form-control:active {
     border-color: #46b5d1 !important; }
 

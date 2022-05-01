@@ -52,7 +52,6 @@
             padding-left: 0;
             padding-right: 0;
             border-radius: 0;
-            color: #fff;
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         }
 
@@ -68,17 +67,16 @@
         .button-21 {
             align-items: center;
             appearance: none;
-            background-color: #3EB2FD;
-            background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+            background-color: #fd3e3e;
+            background-image: linear-gradient(1deg, #ffff99, #cc9900 99%);
             background-size: calc(100% + 20px) calc(100% + 20px);
             border-radius: 100px;
             border-width: 0;
             box-shadow: none;
             box-sizing: border-box;
-            color: #FFFFFF;
+            color: #000000;
             cursor: pointer;
             display: inline-flex;
-            font-family: CircularStd, sans-serif;
             font-size: 1rem;
             height: auto;
             justify-content: center;
@@ -100,6 +98,14 @@
             outline: none;
         }
 
+        .asdf {
+            color: goldenrod;
+        }
+
+        .zxcv {
+            color: #FFDF33;
+        }
+
         .button-21:hover {
             background-position: -20px -20px;
         }
@@ -108,10 +114,19 @@
             box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
         }
 
-        h4 {
-            color: gold;
-            font-family: 'Times New Roman', Times, serif;
+        .titl {
+            max-width: 60%;
+            height: auto;
+
+        
         }
+
+        @media (max-width: 991.98px) {
+            .titl {
+                max-width: 90%;
+            }
+        }
+
 
         .inp {
             background: transparent;
@@ -126,17 +141,22 @@
 </head>
 
 <body>
+    <div style="text-align: center; margin-bottom: -100px;">
+        <img class="titl" src="{{url_for('static', filename='images/titlelogo.webp')}}" alt="Pragyotsav 2022"
+            onerror="this.onerror=null;this.src='static/images/titlelogo.png';">
 
+    </div>
     <section class="ftco-section">
         <div class="row no-gutters">
             <div class="col-md-7">
                 <div class="contact-wrap w-100 p-md-5 p-4" style="background-color:transparent;">
-                    <h3 style="font-family: 'Times New Roman', Times, serif; color: gold;" class="mb-4">Register Here!
+                    <h3 class="zxcv" class="mb-4">Register - To quench your fervor
                     </h3>
                     <div class="col-md-12">
                         <div class="form-group">
-                            <select style="background-color: #171717; font-size: large;" class="form-control" required id="eventselector">
-                                <option value="" disabled selected>Select Event!!</option>
+                            <select style="background-color: #171717; font-size: large;" class="form-control" required
+                                id="eventselector">
+                                <option value="" disabled selected>Select the event you wish to register for!!</option>
                                 <option value="racing">Rc Robo Racing</option>
                                 <option value="drone">Drone Racing</option>
                                 <option value="follower">Robo Line Follower</option>
@@ -150,19 +170,18 @@
                         </div>
                     </div>
                     <div class="idiots" id="racing" style="display: none;">
-                        <h4>You are registering for rc robo racing!</h4>
+                        <h4 class="zxcv" class="zxcv">You are registering for rc robo racing!</h4>
                         <form method="POST" id="contactForm" name="contactForm" action="/registerpage"
                             class="contactForm">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>Team Leader Information *<span>Mandatory</span></label>
+                                    <label>Team Leader Information </label>
                                 </div>
                                 <div class="col-md-6">
                                     <input type="hidden" name="Event" value="Rc Robo Racing">
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-
                                         <input type="text" class="form-control" name="TeamLead" placeholder="Name"
                                             required>
                                     </div>
@@ -212,8 +231,10 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div>
-                                        <p style="float: left;" class="mem11 button-34">Add Member 1</p>
-                                        <p style="float: left;" class="mem12 button-34">Add Member 2</p>
+                                        <p style="float: left; margin-left: 15px;" class="mem11 button-21">First Teammate</p>
+
+                                        <p style="float: left; margin-left: 15px; margin-left: 15px;"
+                                            class="mem12 button-21">Second Teammate</p>
                                     </div>
 
                                 </div>
@@ -319,7 +340,7 @@
 
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="submit" value="Register" style="background-color: #d1faff;" class="button-34">
+                                        <input type="submit" value="Register" class="button-34 ">
 
                                     </div>
                                 </div>
@@ -327,12 +348,12 @@
                         </form>
                     </div>
                     <div class="idiots" id="drone" style="display: none;">
-                        <h4>Your registering for Drone Racing!!</h4>
+                        <h4 class="zxcv" class="zxcv">You are registering for Drone Racing!!</h4>
                         <form method="POST" id="contactForm" name="contactForm" action="/registerpage"
                             class="contactForm">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>Team Leader Information *<span>Mandatory</span></label>
+                                    <label>Team Leader Information </label>
                                 </div>
                                 <div class="col-md-6">
                                     <input type="hidden" name="Event" value="Drone Racing">
@@ -389,8 +410,8 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div>
-                                        <p style="float: left;" class="mem21 button-34">Add Member 1</p>
-                                        <p style="float: left;" class="mem22 button-34">Add Member 2</p>
+                                        <p style="float: left; margin-left: 15px;" class="mem21 button-21">First Teammate</p>
+                                        <p style="float: left; margin-left: 15px;" class="mem22 button-21">Second Teammate</p>
                                     </div>
 
                                 </div>
@@ -503,12 +524,12 @@
                         </form>
                     </div>
                     <div class="idiots" id="follower" style="display: none;">
-                        <h4>Your registering for Robo line follower!!</h4>
+                        <h4 class="zxcv" class="zxcv">You are registering for Robo line follower!!</h4>
                         <form method="POST" id="contactForm" name="contactForm" action="/registerpage"
                             class="contactForm">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>Team Leader Information *<span>Mandatory</span></label>
+                                    <label>Team Leader Information </label>
                                 </div>
                                 <div class="col-md-6">
                                     <input type="hidden" name="Event" value="Robo line follower">
@@ -565,8 +586,8 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div>
-                                        <p style="float: left;" class="mem31 button-34">Add Member 1</p>
-                                        <p style="float: left;" class="mem32 button-34">Add Member 2</p>
+                                        <p style="float: left; margin-left: 15px;" class="mem31 button-21">First Teammate<p>
+                                        <p style="float: left; margin-left: 15px;" class="mem32 button-21">Second Teammate<p>
                                     </div>
 
                                 </div>
@@ -679,12 +700,12 @@
                         </form>
                     </div>
                     <div class="idiots" id="presentation" style="display: none;">
-                        <h4>Your registering for Technical Paper Presentation!!</h4>
+                        <h4 class="zxcv">You are registering for Technical Paper Presentation!!</h4>
                         <form method="POST" id="contactForm" name="contactForm" action="/registerpage"
                             class="contactForm">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>Team Leader Information *<span>Mandatory</span></label>
+                                    <label>Team Leader Information </label>
                                 </div>
                                 <div class="col-md-6">
                                     <input type="hidden" name="Event" value="Technical Paper Presentaion">
@@ -741,8 +762,8 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div>
-                                        <p style="float: left;" class="mem41 button-34">Add Member 1</p>
-                                        <p style="float: left;" class="mem42 button-34">Add Member 2</p>
+                                        <p style="float: left; margin-left: 15px;" class="mem41 button-21">First Teammate<p>
+                                        <p style="float: left; margin-left: 15px;" class="mem42 button-21">Second Teammate<p>
                                     </div>
 
                                 </div>
@@ -855,12 +876,12 @@
                         </form>
                     </div>
                     <div class="idiots" id="war" style="display: none;">
-                        <h4>Your registering for Robo War!!</h4>
+                        <h4 class="zxcv">You are registering for Robo War!!</h4>
                         <form method="POST" id="contactForm" name="contactForm" action="/registerpage"
                             class="contactForm">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>Team Leader Information *<span>Mandatory</span></label>
+                                    <label>Team Leader Information </label>
                                 </div>
                                 <div class="col-md-6">
                                     <input type="hidden" name="Event" value="Robo war">
@@ -917,8 +938,8 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div>
-                                        <p style="float: left;" class="mem51 button-34">Add Member 1</p>
-                                        <p style="float: left;" class="mem52 button-34">Add Member 2</p>
+                                        <p style="float: left; margin-left: 15px;" class="mem51 button-21">First Teammate<p>
+                                        <p style="float: left; margin-left: 15px;" class="mem52 button-21">Second Teammate<p>
                                     </div>
 
                                 </div>
@@ -1031,12 +1052,12 @@
                         </form>
                     </div>
                     <div class="idiots" id="soccer" style="display: none;">
-                        <h4>Your registering for Robo Soccer!!</h4>
+                        <h4 class="zxcv">You are registering for Robo Soccer!!</h4>
                         <form method="POST" id="contactForm" name="contactForm" action="/registerpage"
                             class="contactForm">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>Team Leader Information *<span>Mandatory</span></label>
+                                    <label>Team Leader Information </label>
                                 </div>
                                 <div class="col-md-6">
                                     <input type="hidden" name="Event" value="Robo Soccer">
@@ -1093,8 +1114,8 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div>
-                                        <p style="float: left;" class="mem61 button-34">Add Member 1</p>
-                                        <p style="float: left;" class="mem62 button-34">Add Member 2</p>
+                                        <p style="float: left; margin-left: 15px;" class="mem61 button-21">First Teammate<p>
+                                        <p style="float: left; margin-left: 15px;" class="mem62 button-21">Second Teammate<p>
                                     </div>
 
                                 </div>
@@ -1207,12 +1228,12 @@
                         </form>
                     </div>
                     <div class="idiots" id="soldering" style="display: none;">
-                        <h4>Your registering for Style Soldering!!</h4>
+                        <h4 class="zxcv">You are registering for Style Soldering!!</h4>
                         <form method="POST" id="contactForm" name="contactForm" action="/registerpage"
                             class="contactForm">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>Team Leader Information *<span>Mandatory</span></label>
+                                    <label>Team Leader Information </label>
                                 </div>
                                 <div class="col-md-6">
                                     <input type="hidden" name="Event" value="Style Soldering">
@@ -1269,8 +1290,8 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div>
-                                        <p style="float: left;" class="mem71 button-34">Add Member 1</p>
-                                        <p style="float: left;" class="mem72 button-34">Add Member 2</p>
+                                        <p style="float: left; margin-left: 15px;" class="mem71 button-21">First Teammate<p>
+                                        <p style="float: left; margin-left: 15px;" class="mem72 button-21">Second Teammate<p>
                                     </div>
 
                                 </div>
@@ -1383,12 +1404,12 @@
                         </form>
                     </div>
                     <div class="idiots" id="hardware" style="display: none;">
-                        <h4>Your registering for Hardware Assembling!!</h4>
+                        <h4 class="zxcv">You are registering for Hardware Assembling!!</h4>
                         <form method="POST" id="contactForm" name="contactForm" action="/registerpage"
                             class="contactForm">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>Team Leader Information *<span>Mandatory</span></label>
+                                    <label>Team Leader Information </label>
                                 </div>
                                 <div class="col-md-6">
                                     <input type="hidden" name="Event" value="Hardware Assembling">
@@ -1445,8 +1466,8 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div>
-                                        <p style="float: left;" class="mem81 button-34">Add Member 1</p>
-                                        <p style="float: left;" class="mem82 button-34">Add Member 2</p>
+                                        <p style="float: left; margin-left: 15px;" class="mem81 button-21">First Teammate<p>
+                                        <p style="float: left; margin-left: 15px;" class="mem82 button-21">Second Teammate<p>
                                     </div>
 
                                 </div>
@@ -1559,7 +1580,7 @@
                         </form>
                     </div>
                     <div class="idiots" id="workshop" style="display: none;">
-                        <h4>Your registering for 3D-Printing Workshop!!</h4>
+                        <h4 class="zxcv">You are registering for 3D-Printing Workshop!!</h4>
                         <form method="POST" id="contactForm" name="contactForm" action="/registerpage"
                             class="contactForm">
                             <div class="row">
@@ -1660,19 +1681,19 @@
 
                 $(".rem1").val(null);
 
-                if ($(this).text() == "Add Member 1")
-                    $(this).text("Remove Member 1")
+                if ($(this).text() == "First Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 1");
+                    $(this).text("First Teammate");
 
             });
             $(".mem12").click(function () {
                 $("#mem12").toggle();
                 $(".rem2").val(null);
-                if ($(this).text() == "Add Member 2")
-                    $(this).text("Remove Member 2")
+                if ($(this).text() == "Second Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 2");
+                    $(this).text("Second Teammate");
 
             });
 
@@ -1681,19 +1702,19 @@
 
                 $(".rem1").val(null);
 
-                if ($(this).text() == "Add Member 1")
-                    $(this).text("Remove Member 1")
+                if ($(this).text() == "First Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 1");
+                    $(this).text("First Teammate");
 
             });
             $(".mem22").click(function () {
                 $("#mem22").toggle();
                 $(".rem2").val(null);
-                if ($(this).text() == "Add Member 2")
-                    $(this).text("Remove Member 2")
+                if ($(this).text() == "Second Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 2");
+                    $(this).text("Second Teammate");
 
             });
             $(".mem31").click(function () {
@@ -1701,19 +1722,19 @@
 
                 $(".rem1").val(null);
 
-                if ($(this).text() == "Add Member 1")
-                    $(this).text("Remove Member 1")
+                if ($(this).text() == "First Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 1");
+                    $(this).text("First Teammate");
 
             });
             $(".mem32").click(function () {
                 $("#mem32").toggle();
                 $(".rem2").val(null);
-                if ($(this).text() == "Add Member 2")
-                    $(this).text("Remove Member 2")
+                if ($(this).text() == "Second Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 2");
+                    $(this).text("Second Teammate");
 
             });
             $(".mem41").click(function () {
@@ -1721,40 +1742,40 @@
 
                 $(".rem1").val(null);
 
-                if ($(this).text() == "Add Member 1")
-                    $(this).text("Remove Member 1")
+                if ($(this).text() == "First Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 1");
+                    $(this).text("First Teammate");
 
             });
             $(".mem42").click(function () {
                 $("#mem42").toggle();
                 $(".rem2").val(null);
-                if ($(this).text() == "Add Member 2")
-                    $(this).text("Remove Member 2")
+                if ($(this).text() == "Second Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 2");
+                    $(this).text("Second Teammate");
 
             });
-            
+
             $(".mem51").click(function () {
                 $("#mem51").toggle();
 
                 $(".rem1").val(null);
 
-                if ($(this).text() == "Add Member 1")
-                    $(this).text("Remove Member 1")
+                if ($(this).text() == "First Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 1");
+                    $(this).text("First Teammate");
 
             });
             $(".mem52").click(function () {
                 $("#mem52").toggle();
                 $(".rem2").val(null);
-                if ($(this).text() == "Add Member 2")
-                    $(this).text("Remove Member 2")
+                if ($(this).text() == "Second Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 2");
+                    $(this).text("Second Teammate");
 
             });
             $(".mem61").click(function () {
@@ -1762,19 +1783,19 @@
 
                 $(".rem1").val(null);
 
-                if ($(this).text() == "Add Member 1")
-                    $(this).text("Remove Member 1")
+                if ($(this).text() == "First Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 1");
+                    $(this).text("First Teammate");
 
             });
             $(".mem62").click(function () {
                 $("#mem62").toggle();
                 $(".rem2").val(null);
-                if ($(this).text() == "Add Member 2")
-                    $(this).text("Remove Member 2")
+                if ($(this).text() == "Second Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 2");
+                    $(this).text("Second Teammate");
 
             });
 
@@ -1783,19 +1804,19 @@
 
                 $(".rem1").val(null);
 
-                if ($(this).text() == "Add Member 1")
-                    $(this).text("Remove Member 1")
+                if ($(this).text() == "First Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 1");
+                    $(this).text("First Teammate");
 
             });
             $(".mem72").click(function () {
                 $("#mem72").toggle();
                 $(".rem2").val(null);
-                if ($(this).text() == "Add Member 2")
-                    $(this).text("Remove Member 2")
+                if ($(this).text() == "Second Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 2");
+                    $(this).text("Second Teammate");
 
             });
 
@@ -1804,19 +1825,19 @@
 
                 $(".rem1").val(null);
 
-                if ($(this).text() == "Add Member 1")
-                    $(this).text("Remove Member 1")
+                if ($(this).text() == "First Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 1");
+                    $(this).text("First Teammate");
 
             });
             $(".mem82").click(function () {
                 $("#mem82").toggle();
                 $(".rem2").val(null);
-                if ($(this).text() == "Add Member 2")
-                    $(this).text("Remove Member 2")
+                if ($(this).text() == "Second Teammate")
+                    $(this).text("Remove Teammate")
                 else
-                    $(this).text("Add Member 2");
+                    $(this).text("Second Teammate");
 
             });
 

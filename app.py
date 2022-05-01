@@ -79,7 +79,7 @@ def registerpage():
         
         gsheet.insert_row(row, 2)  # since the first row is our title header
     
-        return render_template("regresponse.html",reg=row[0],name=request.form['TeamLead'],trid=request.form['Transaction'])
+        return render_template("regresponse.html",reg=row[0],name=request.form['TeamLead'],ename=request.form['Event'],trid=request.form['Transaction'])
     else:   
         return render_template("register.html")
 
