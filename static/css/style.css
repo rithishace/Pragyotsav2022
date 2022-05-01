@@ -831,19 +831,29 @@ a, a:hover {
   background-color: white;
   padding: 3px 3px 3px 3px;
   float: left;
+  margin-left: -80px;
   height: auto;
 }
 #fghjkl{
   max-width: 13%;
   float: right;
   margin-top: -10px;
+  margin-right: -100px;
   height: auto;
+}
+.qwert {
+  float: right;
+  max-width: 9%;
+  padding: 5px;
+  margin-right: 270px;
 }
 @media (max-width: 991.98px) {
   #abcde{
+    margin-left: 0px;
     max-width: 35%;
   }
   #fghjkl{
+    margin-right:0px;
     max-width: 20%;
   }
   .qwert{
