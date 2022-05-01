@@ -827,24 +827,46 @@ a, a:hover {
   color: gold;
 }
 #abcde{
-  max-width: 25%;
-  float: left;
+  max-width:80%;
+  
   height: auto;
 }
 #fghjkl{
-  max-width: 13%;
-  float: right;
+  max-width: 40%;  
   height: auto;
 }
+.qwert {           
+  max-width: 20%;
+  padding-top: 5px;
+  
+}
+.colum {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  vertical-align:middle;
+  text-align: center;
+  
+}
+.ro{
+  margin-top: 80px;
+}
+/* Clear floats after the columns */
+.ro:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @media (max-width: 991.98px) {
   #abcde{
-    max-width: 35%;
+   
   }
   #fghjkl{
-    max-width: 20%;
+   
   }
   .qwert{
-    max-width: 15%;
+   
   }
   .cover-v1 .heading {
     font-size: 3rem;
