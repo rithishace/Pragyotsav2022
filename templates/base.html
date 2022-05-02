@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Pragyotsav&mdash; A National Level Technical Festival</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="html, css, javascript, jquery">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/vendor/icomoon/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/vendor/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/vendor/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/vendor/aos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/vendor/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/vendor/jquery.fancybox.min.css') }}">
+    <link href="http://fonts.cdnfonts.com/css/samarkan" rel="stylesheet">
+
+    <style type="text/css">
+        .border {
+  border-top: 2px solid rgba(236, 239, 241, 0.07);
+  height: 1px;
+  width: 75px;
+  margin: 15px auto 0;
+  position: relative;
+  width: 30%;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  max-width: 20%;
+align-items: center;
+  padding: 0px 4px;
+}
+
+.column img {
+  margin : 8px 8px 8px 8px ;
+  vertical-align: middle;
+  width: 80%;
+  height: 80%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  .column img {
+  margin : 8px 8px 8px 8px ;
+  vertical-align: middle;
+  width: 60%;
+  height: 60%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+  margin : 8px 8px 8px 8px ;
+  vertical-align: middle;
+  width: 40%;
+  height: 40%;
+}
+}
+
+.border:before {
+  background-color: #fff;
+  content: '';
+  height: 6px;
+  left: 50%;
+  margin-left: -20px;
+  position: absolute;
+  top: -4px;
+  width: 50px;
+  background-color: #D4AF37;
+}html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero::before {
+            content: "";
+            background-image: url('images/bg/bg00049.jpg');
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.65;
+        }
+    </style>
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/style.css') }}">
+
+</head>
+
+<body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+    {%block content%}
+    {%endblock%}
+   
+
+    <script src="{{url_for('static', filename='js/scripts-dist.js')}}"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+</body>
+
+
+
+</html>
